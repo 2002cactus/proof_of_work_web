@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Proof of Work Simulator</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Proof of Work Simulator</h1>
+
+    <p class="description">
+        Mô phỏng cơ chế Proof of Work
+    </p>
+
+    <form method="POST">
+
+        <label>Dữ liệu giao dịch</label>
+
+        <textarea
+            name="data"
+            placeholder="Alice gửi Bob 10 BTC"
+            required></textarea>
+
+        <label>Difficulty</label>
+
+        <input
+            type="number"
+            name="difficulty"
+            min="1"
+            max="6"
+            value="4"
+            required>
+
+        <button type="submit">
+            Start Mining
+        </button>
+
+    </form>
+
+    {{RESULT}}
+
+</div>
+
+</body>
+</html>
